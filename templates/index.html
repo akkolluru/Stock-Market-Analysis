@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Analysis</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Stock Analysis</h1>
+    </div>
+    <div>
+        <div class="container">
+            <form method="POST" action="/">
+                <label for="ticker">Select Company:</label>
+                <select name="ticker" id="ticker">
+                    {% for ticker in company_tickers %}
+                    <option value="{{ ticker }}">{{ ticker }}</option>
+                    {% endfor %}
+                </select><br>
+                <label for="start_date">Start Date:</label>
+                <input type="date" name="start_date" id="start_date"><br>
+                <label for="end_date">End Date:</label>
+                <input type="date" name="end_date" id="end_date"><br>
+                <button type="submit">Generate Plot</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

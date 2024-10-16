@@ -1,0 +1,57 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Ffreebackground%2Fminimalistic-style-stock-market-business-theme-web-banner-background_1168797.html&psig=AOvVaw0fDgn1iuR9oUh_KPWG-jG4&ust=1714112504673000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKDn3ejc3IUDFQAAAAAdAAAAABAE");
+    background-position: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
